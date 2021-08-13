@@ -43,11 +43,11 @@ char* analyse_features(FILE *input){
 		fgets(singleLine, 100, input);
 		energy = strtod(singleLine, &stopstring);
 		zcr = atof(stopstring+1);
-		if(zcr > 20)
+		if(zcr > 15)
 			count_fricatives ++;
 		count_frames ++;
 	}
-	if(count_fricatives >= count_frames * 0.4)
+	if(count_fricatives >= count_frames * 0.3)
 		return "YES";
 	else
 		return "NO";
@@ -66,7 +66,7 @@ char* analyse_features(FILE *input, long start, long end){
 			count_fricatives ++;
 		count_frames ++;
 	}
-	if(count_fricatives >= count_frames * 0.4)
+	if(count_fricatives >= count_frames * 0.3)
 		return "YES";
 	else
 		return "NO";

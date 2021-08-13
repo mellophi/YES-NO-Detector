@@ -89,6 +89,7 @@ int main(){
 				break;
 			}
 		}
+		if(flag == 1) end = frameCount - 3;
 
 
 		printf("START FARME : %d END FRAME : %d\n", start, end);
