@@ -1,4 +1,4 @@
-﻿Build started 13-08-2021 17:14:01.
+﻿Build started 13-08-2021 17:51:57.
      1>Project "D:\IITG\Semester 1\Speech Processing\Code\Assignment_1\Assignment_1\Assignment_1.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Assignment_1.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -8,9 +8,15 @@
          main_file.cpp
      1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\utils.h(92): warning C4101: 'stopstring' : unreferenced local variable
      1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\utils.h(150): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\main_file.cpp(24): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
      1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\main_file.cpp(25): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
-     1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\main_file.cpp(33): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\main_file.cpp(27): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\main_file.cpp(28): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>d:\iitg\semester 1\speech processing\code\assignment_1\assignment_1\main_file.cpp(42): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -30,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.37
+Time Elapsed 00:00:02.06

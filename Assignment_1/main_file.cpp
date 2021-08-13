@@ -9,22 +9,31 @@
 
 #define noiseFrame 5
 
+const char path[] = "../Input/";
+char filename[1000], temp[1000];
+
 int samples[1000000], choice;
 
 double thresholdEnergy = 0, thresholdZCR = 0;
 
+FILE *input, *output, *input_n, *noise_op;
+
 
 int main(){
-	FILE *input, *output, *input_n, *noise_op;
-	fopen_s(&input, "D:\\IITG\\Semester 1\\Speech Processing\\Input\\yes_sample_4.txt", "r"); //getting the input
+	printf("Enter 1: Use process 1 \nEnter 2 : Use process 2\nEnter choice and filename : ");
+	scanf("%d", &choice);
+	scanf("%s", &filename);
+	printf("-----------------------------------\n");
+	strcpy(temp, path);
+	strcat(temp, filename);
+
+
+	fopen_s(&input, temp, "r"); //getting the input
 	fopen_s(&input_n, "normalized_input.txt", "a+"); //normalized output is saved in this file
 	fopen_s(&output, "features.txt", "a+"); //extracting the features and saving
 	fopen_s(&noise_op, "noise_features.txt", "a+");//values after removing noise is save in this file
 
-	printf("Enter 1: Use process 1 \nEnter 2 : Use process 2\nEnter choice : ");
-	scanf("%d", &choice);
-	printf("-----------------------------------\n");
-	
+
 	//In this process we are removing the noise and applying necessary pad
 	//then extracting the features and analysing it
 	if(choice == 1){
