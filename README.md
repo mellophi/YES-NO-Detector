@@ -10,6 +10,17 @@ Following is the classification we do -
 * After getting the word we just analyse the features (energy and zcr) and if 30% of the word contains high zcr then we say it is YES.
 * Else we say it is NO.
 
+## Instructions to run the file
+* Clone this repo or download it as zip.
+* Go inside and open the [Assignment_1.sln](https://github.com/mellophi/YES-NO-Detector/blob/master/Assignment_1.sln) file in Visual Studio 10+.
+* Run the main_file.cpp (CTRL + F5).
+
+## Input
+Here I have used the sample input provided to use and divided it into 8 parts. Ran the program in each of the parts.
+If you want to use your own input the do the following steps - 
+* Record a single word (YES/NO) and save it as a .txt file in the [Input](https://github.com/mellophi/YES-NO-Detector/tree/master/Input) folder.
+* Give that name while running it.
+
 ## Preprocessing
 Before we try to do any analysis we have to remove the DC Shift and Normalize the input to 5000.
 
