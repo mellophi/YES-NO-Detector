@@ -29,7 +29,7 @@ hardcoded data due to which it's dynamic nature decreases.
 Noise offset = +45/-45 (representing the ambient noise which has been found by analysing the noise as input)
 Muliplier = 7.2 (found by tuning)
 
-Process 2 however does not use any such hardcoded data due to which it's dynamic nature is more. We can test both of them out and check for ourself :)
+Process 2 however does not use any such hardcoded data due to which it's dynamic nature is more. We can test both of them out and check for ourself 😄
 
 ## Output
 ![picture alt](https://github.com/mellophi/YES-NO-Detector/blob/master/Output/process1.PNG "Output for process 1")
