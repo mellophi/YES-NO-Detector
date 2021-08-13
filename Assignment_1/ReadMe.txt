@@ -2,39 +2,30 @@
     CONSOLE APPLICATION : Assignment_1 Project Overview
 ========================================================================
 
-AppWizard has created this Assignment_1 application for you.
+This project is developed for detection of "YES" and "NO" using the Acoustic and Phonetics approach.
+Here we try to first mark the end and start of the word using the Short Term Energy (for 100 frames) and
+Zero Cross Rate (ZCR).
 
-This file contains a summary of what you will find in each of the files that
-make up your Assignment_1 application.
+Following is the classification we do - 
+1) If the energy of i, i+1, i+2 frames are more than the energy of noise then we say that the word has started.
+2) If the energy of i, i+1, i+2 frames is less than 3 * the threshold energy then we say that the word has ended.
+3) After getting the word we just analyse the features (energy and zcr) and if 30% of the word contains high zcr then we say it is YES.
+4) Else we say it is NO.
 
+Preprocessing - 
+Before we try to do any analysis we have to remove the DC Shift and Normalize the input to 5000.
 
-Assignment_1.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
+I have created a header file utils.h which contains the utitlity function for all the things that has been done.
+Here, I have tried out 2 types of process to do the classification.
 
-Assignment_1.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
+Process 1 : Removing all the noise and using necessary padding then analysing the input
+Process 2 : Marking the start and end of the word and then analysing the input.
 
-Assignment_1.cpp
-    This is the main application source file.
+When we first run the application it will ask which process we want to use. Process 1 provided more accuracy than process 2 but it contains following
+hardcoded data due to which it's dynamic nature decreases.
 
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
+HARDCODED DATA FOR PROCESS 1 : 
+Noise offset = +45/-45 (representing the ambient noise which has been found by analysing the noise as input)
+Muliplier = 7.2 (found by tuning)
 
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named Assignment_1.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+Process 2 however does not use any such hardcoded data due to which it's dynamic nature is more. We can test both of them out and check for ourself.
