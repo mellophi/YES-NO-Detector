@@ -1,4 +1,4 @@
-﻿Build started 13-08-2021 17:51:57.
+﻿Build started 13-08-2021 19:23:21.
      1>Project "D:\IITG\Semester 1\Speech Processing\Code\Assignment_1\Assignment_1\Assignment_1.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Assignment_1.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -36,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.06
+Time Elapsed 00:00:01.81

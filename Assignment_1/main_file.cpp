@@ -20,7 +20,9 @@ FILE *input, *output, *input_n, *noise_op;
 
 
 int main(){
-	printf("Enter 1: Use process 1 \nEnter 2 : Use process 2\nEnter choice and filename : ");
+	printf("Enter 1: Remove noise and pad the data then analyse \n");
+	printf("Enter 2 : Put start and end markers to the word and analyse \n");
+	printf("Enter choice and filename seperated by space : ");
 	scanf("%d", &choice);
 	scanf("%s", &filename);
 	printf("-----------------------------------\n");
