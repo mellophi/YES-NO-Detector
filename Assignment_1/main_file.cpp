@@ -58,7 +58,7 @@ int main(){
 
 		char singleLine[100], *stop;
 	
-		//finding the number of segments and the start and stop positions of each of the segments
+		//reading the feature file and saving it in energy and zcr array
 		rewind(output);
 		double energy[10000], zcr[10000];
 		long start, end, seg_cnt = 0, frameCount = 0, flag = 0;
@@ -89,6 +89,7 @@ int main(){
 				break;
 			}
 		}
+		//if end is not found then making the last frame - 3 as the end marker for the word
 		if(flag == 1) end = frameCount - 3;
 
 
