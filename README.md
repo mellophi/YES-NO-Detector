@@ -5,8 +5,8 @@ Here we try to first mark the end and start of the word using the Short Term Ene
 Zero Cross Rate (ZCR).
 
 Following is the classification we do - 
-* If the energy of i, i+1, i+2 frames are more than the energy of noise then we say that the word has started.
-* If the energy of i, i+1, i+2 frames is less than 3 * the threshold energy then we say that the word has ended.
+* If the energy of i, i+1, i+2 frames are more than the 3 * energy of noise then we say that the word has started.
+* If the energy of i, i+1, i+2 frames is less than 3 * energy of noise then we say that the word has ended.
 * After getting the word we just analyse the features (energy and zcr) and if 30% of the word contains high zcr then we say it is YES.
 * Else we say it is NO.
 
