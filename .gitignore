@@ -6,6 +6,7 @@
 *.vcxproj.filters
 *.vcxproj.user
 ipch/*
+Excluded/*
 noise_avg.cpp
 yes_no_detector.cpp
 feature_extractor.cpp
