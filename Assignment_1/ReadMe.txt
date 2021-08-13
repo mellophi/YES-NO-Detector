@@ -1,4 +1,4 @@
-YES-NO Detector
+YES-NO Detector (https://github.com/mellophi/YES-NO-Detector)
 This project is developed for detection of "YES" and "NO" using the Acoustic and Phonetics approach. Here we try to first mark the end and start of the word using the Short Term Energy (for 100 frames) and Zero Cross Rate (ZCR).
 
 Following is the classification we do -
